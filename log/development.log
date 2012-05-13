@@ -889,3 +889,195 @@ Served asset /app/templates/contacts/show.js - 304 Not Modified (4ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-13 12:00:11 +0300
 Served asset /application.js - 304 Not Modified (242ms)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (8.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (8.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateContacts (20111230232528)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111230232528')
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("contacts")
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-13 15:16:43 +0300
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (1.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/index.html.erb within layouts/application (26.0ms)
+Compiled app/templates/contacts/edit.js  (0ms)  (pid 6060)
+Compiled application.js  (12ms)  (pid 6060)
+Completed 200 OK in 935ms (Views: 934.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /jquery.js - 304 Not Modified (50ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /contacts.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/vendor/ember.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /vendor/ember.js - 304 Not Modified (75ms)
+
+
+Started GET "/assets/vendor/ember-rest.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /vendor/ember-rest.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /app/app.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/app/models/contact.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /app/models/contact.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/app/controllers/contacts.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:47 +0300
+Served asset /app/controllers/contacts.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/app/views/contacts/edit.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/views/contacts/edit.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app/views/contacts/list.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/views/contacts/list.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app/views/contacts/new.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/views/contacts/new.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/app/views/contacts/show.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/views/contacts/show.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/app/helpers/forms.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/helpers/forms.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/app/templates/contacts/edit.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/templates/contacts/edit.js - 200 OK (4ms)
+
+
+Started GET "/assets/app/templates/contacts/list.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/templates/contacts/list.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /application.js - 304 Not Modified (256ms)
+
+
+Started GET "/assets/app/templates/contacts/show.js?body=1" for 127.0.0.1 at 2012-05-13 15:16:48 +0300
+Served asset /app/templates/contacts/show.js - 304 Not Modified (3ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2012-05-13 15:16:57 +0300
+Processing by ContactsController#create as JSON
+  Parameters: {"contact"=>{"first_name"=>"aaa", "last_name"=>"aaaa"}}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (71.0ms)[0m  [1mINSERT INTO "contacts" ("created_at", "first_name", "last_name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 13 May 2012 12:16:57 UTC +00:00], ["first_name", "aaa"], ["last_name", "aaaa"], ["updated_at", Sun, 13 May 2012 12:16:57 UTC +00:00]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Completed 201 Created in 95ms (Views: 2.0ms | ActiveRecord: 80.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2012-05-13 15:19:30 +0300
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.0ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/index.html.erb within layouts/application (1.0ms)
+Compiled app/templates/contacts/edit.js  (0ms)  (pid 6060)
+Compiled application.js  (34ms)  (pid 6060)
+Completed 200 OK in 603ms (Views: 601.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/vendor/ember.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /vendor/ember.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/ember-rest.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /vendor/ember-rest.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:31 +0300
+Served asset /app/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/models/contact.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/models/contact.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/controllers/contacts.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/controllers/contacts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/views/contacts/edit.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/views/contacts/edit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/views/contacts/list.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/views/contacts/list.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/views/contacts/new.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/views/contacts/new.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/views/contacts/show.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/views/contacts/show.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/helpers/forms.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/helpers/forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/app/templates/contacts/edit.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/templates/contacts/edit.js - 200 OK (3ms)
+
+
+Started GET "/assets/app/templates/contacts/list.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/templates/contacts/list.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /application.js - 304 Not Modified (253ms)
+
+
+Started GET "/assets/app/templates/contacts/show.js?body=1" for 127.0.0.1 at 2012-05-13 15:19:32 +0300
+Served asset /app/templates/contacts/show.js - 304 Not Modified (0ms)
