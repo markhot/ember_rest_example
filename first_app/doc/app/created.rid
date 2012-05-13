@@ -1,0 +1,7 @@
+Sun, 13 May 2012 11:53:07 +0300
+doc/README_FOR_APP	Sun, 06 May 2012 10:46:37 +0300
+app/controllers/application_controller.rb	Sun, 06 May 2012 10:46:37 +0300
+app/controllers/contacts_controller.rb	Sun, 06 May 2012 10:46:37 +0300
+app/helpers/application_helper.rb	Sun, 06 May 2012 10:46:37 +0300
+app/helpers/contacts_helper.rb	Sun, 06 May 2012 10:46:37 +0300
+app/models/contact.rb	Sun, 06 May 2012 10:46:37 +0300
